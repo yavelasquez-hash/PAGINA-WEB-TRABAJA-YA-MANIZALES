@@ -1,0 +1,116 @@
+/* FONDO GENERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #001f1f, #003333);
+  color: #d4af37;
+}
+
+/* LOGIN (se mantiene por si lo usas) */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.titulo {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 250px;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #d4af37;
+  background: transparent;
+  color: #d4af37;
+  border-radius: 8px;
+}
+
+input::placeholder {
+  color: #d4af37;
+}
+
+button {
+  width: 270px;
+  padding: 12px;
+  background: linear-gradient(90deg, #d4af37, #b8962e);
+  border: none;
+  color: #002b2b;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
+}
+
+.extra-text {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 240px;
+  height: 100vh;
+
+  background: #002b2b;
+  border-right: 2px solid #d4af37;
+
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+/* LOGO */
+.logo {
+  color: #d4af37;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* ITEMS */
+.sidebar .menu-item {
+  display: flex;
+  align-items: center;
+
+  font-size: 18px;
+  padding: 15px;
+  margin: 12px 0;
+
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  color: #d4af37;
+}
+
+/* ICONOS */
+.sidebar .menu-item span {
+  font-size: 26px;
+  margin-right: 12px;
+}
+
+/* HOVER */
+.sidebar .menu-item:hover {
+  background: #d4af37;
+  color: #002b2b;
+}
+
+/* CONTENIDO */
+.contenido {
+  margin-left: 260px;
+  padding: 40px;
+}
